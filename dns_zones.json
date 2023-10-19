@@ -213,5 +213,10 @@
       "type":"a",
       "name":"asobids.ms9.gs.nintendowifi.net",
       "value":"95.217.77.151"
+   },
+   {
+      "type":"a",
+      "name":"en-ds.pokemon-gl.com",
+      "value":"3.15.1.52"
    }
 ]
