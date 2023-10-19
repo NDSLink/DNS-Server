@@ -174,7 +174,7 @@ for zone in zones:
   elif zone["type"] == "p":
     ZONES[zone["name"]] = [ Record(A, socket.gethostbyname(zone["value"])) ]
 
-ZONES["en-ds.pokemon-gl.com"] = [ Record(A, MY_IP) ]
+#ZONES["en-ds.pokemon-gl.com"] = [ Record(A, MY_IP) ]
     
 print("[INFO] DNS information has been downloaded successfully.")
 
