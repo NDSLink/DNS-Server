@@ -58,6 +58,9 @@ print("This tool will help you avoid error 107304 in the Forecast/News Channel. 
 
 
 print("#### How To Use ####\n")
+
+Sorry for putting this here but Github doesn't let you DM. I've gotten Docker up and working but it's telling me that pull access from Python is denied. Are there any additional instructions that would be helpful?
+
 print("The setup process does not differ from what is shown at https://wii.guide/riiconnect24 except for the values to enter in your custom DNS settings.")
 print("First, make sure that your Wii / DS is connected to the same network as this computer.")
 
@@ -153,9 +156,8 @@ class Record:
 
 
 ZONES = {}
-
 try:
-  get_zones = requests.get("https://raw.githubusercontent.com/RiiConnect24/RiiConnect24-DNS-Server/master/dns_zones.json")
+  get_zones = requests.get("https://raw.githubusercontent.com/NDSLink/DNS-Server/master/dns_zones.json")
 except requests.exceptions.Timeout:
   print("[ERROR] Couldn't load DNS data: connection to GitHub timed out.")
   print("[ERROR] Are you connected to the Internet?")
